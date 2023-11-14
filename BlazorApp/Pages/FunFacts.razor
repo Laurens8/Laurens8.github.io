@@ -1,0 +1,14 @@
+﻿@page "/funfacts"
+
+<h3>Opdracht geboortedatum FunFacts</h3>
+
+<div>
+    <div>
+        <div class="col">
+            <div class="col"><label for="birthdate">Enter your birthdate:</label></div>
+            <div class="col"><input id="birthdate" type="date" @bind="birthdate" /></div>
+            <div class="col mt-3"><button class="btn btn-primary" @onclick="SetBirthdate">Check FunFacts</button></div>
+        </div>
+    </div>
+</div>
+
