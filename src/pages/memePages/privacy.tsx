@@ -2,6 +2,7 @@ import { FunctionComponent, useContext, CSSProperties, useEffect } from "react";
 import CustomNavBar from "../navBar/customNavBar";
 import "./mainPage";
 import { themeContext } from "../../context";
+import { LoginContext } from "../../context";
 
 const style: CSSProperties = {
   textAlign: "center",
@@ -12,9 +13,10 @@ const style: CSSProperties = {
 
 const Privacy: FunctionComponent = () => {
     const {theme} = useContext(themeContext)
+    const { setLogdin } = useContext(LoginContext);
 
     useEffect(() => {
-        console.log('Theme changed:', theme);
+      setLogdin(true);
   }, [theme]);
 
   return (   

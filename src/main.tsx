@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <StrictMode>
     <BrowserRouter>
-    <NextUIProvider>          
+    <NextUIProvider>       
           <Routing/>
     </NextUIProvider>
     </BrowserRouter>

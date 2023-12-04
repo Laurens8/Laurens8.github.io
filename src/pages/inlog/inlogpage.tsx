@@ -2,20 +2,20 @@ import React, { FunctionComponent, useState, CSSProperties, useContext } from "r
 import { Input, Button } from "@nextui-org/react";
 import { EyeFilledIcon } from "./EyeFilledIcon";
 import { EyeSlashFilledIcon } from "./EyeSlashFilledIcon";
-import { NavLink } from "react-router-dom";
-import CustomNavBar from "../navBar/customNavBar";
 import {userNameContext} from "../../context";
 import { themeContext } from "../../context";
+import { LoginContext } from "../../context";
+import { useNavigate } from "react-router-dom";
 
 const style: CSSProperties = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "100vh",
+
 };
 
 const containerStyle: CSSProperties = {
-  width: "100%",
+   width: "100%",
   maxWidth: "400px",
   padding: "20px",
   borderRadius: "8px",
@@ -24,12 +24,20 @@ const containerStyle: CSSProperties = {
 };
 
 const formGroupStyle: CSSProperties = {
-  marginBottom: "20px",
-  color: 'white'
+   marginBottom: "20px",
+  color: '#BA9238',
 };
 
 const buttonStyle: CSSProperties = {
   width: "100%",
+  marginTop: "10px",
+};
+
+const headingStyle: CSSProperties = {
+  fontSize: "2.2rem",
+  marginTop: "100%",
+  marginBottom: "20%",
+  color: '#BA9238',
 };
 
 const Login: FunctionComponent = () => {
@@ -37,6 +45,8 @@ const Login: FunctionComponent = () => {
   const [valuepas, setValuepas] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   const {theme} = useContext(themeContext)
+  const { setLogdin } = useContext(LoginContext);
+  const navigate = useNavigate();
 
   const toggleVisibility = () => setIsVisible(!isVisible);
 
@@ -49,20 +59,20 @@ const Login: FunctionComponent = () => {
     return validateEmail(userName) ? false : true;
   }, [userName]);
 
-  const submitForm = (e) => {
+ const submitForm = (e) => {
     e.preventDefault();
-    
+    setLogdin(true);
+    navigate('/mainpage');
   };
 
 const {name, setName} = useContext(userNameContext)
 
   return (
-    <>
-          <CustomNavBar />   
-      <div className={theme === 'light' ? 'light-mode' : 'dark-mode'} style={style}>
+    <div className={theme === 'light' ? 'light-mode' : 'dark-mode'}>
+      <div style={style}>
         <div style={containerStyle}>
-           <p style={{ fontSize: "1.2rem", marginBottom: "20px", color: 'white' }}>
-            Welcome to Our Platform
+           <p style={headingStyle}>
+            Welcome to Meme-It
           </p>
           <form className={theme === 'light' ? 'light-mode' : 'dark-mode'} onSubmit={submitForm}>
             <div style={formGroupStyle}>
@@ -109,15 +119,12 @@ const {name, setName} = useContext(userNameContext)
               color="warning"
               variant="bordered"
               style={buttonStyle}
-            >
-              <NavLink to="/mainpage" style={{ color: "inherit", textDecoration: "none" }}>
-                Login
-              </NavLink>
+            > Login         
             </Button>
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

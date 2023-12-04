@@ -1,21 +1,14 @@
-import { FunctionComponent, useContext, ReactNode, useState } from "react";
-import { userNameContext } from "./context";
+import { FunctionComponent } from "react";
 import CustomNavBar from "./pages/navBar/customNavBar";
+import Login from "./pages/inlog/inlogpage";
 
-
-interface AppProps {
-   children: ReactNode;
-}
-
-const App: FunctionComponent<AppProps> = ({children}) => {
-    const { name } = useContext(userNameContext);
-    const [NameValue, setName] = useState('');
-    setName(name);
+const App: FunctionComponent = () => {
   
   return (
-    <CustomNavBar name={NameValue}>
-        {children}
-    </CustomNavBar>
+    <>
+      <CustomNavBar />
+      <Login />
+    </>
   );
 }
 

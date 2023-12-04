@@ -32,6 +32,8 @@
 .light-mode {
     background-color: #ffffff;
     color: #000000;
+    height: 100%;
+    width: 100%;
 }
 
 .light-mode hr {
@@ -41,6 +43,7 @@
 .dark-mode {
     background-color: #111111;
     color: #ffffff;
+    margin-bottom: 164%;
 }
 
 .card-container {

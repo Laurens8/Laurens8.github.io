@@ -38,9 +38,18 @@ export const slideContext = createContext({
   setSlide: (slide: number) => {},
 });
 
-const UserNameContext: FunctionComponent<userNameContextProps> = ({ children }) => {
+export const LoginContext = createContext({
+  login: '',
+  logdin: undefined,
+  setLogin: (login: string) => {},
+  setLogdin: (logdin: boolean) => {},
+});
+
+const UserContext: FunctionComponent<userNameContextProps> = ({ children }) => {
   const [NameValue, setName] = useState("");
   const [MemeValue, setMeme] = useState("");
+  const [logdin, setLogdin] = useState();
+  const [LoginValue, setLogin] = useState("");
   const [SlideValue, setSlide] = useState(600);
   const [ThemeValue, setThemeState] = useState<string>(
     localStorage.getItem(LOCAL_STORAGE_THEME_KEY) ?? "dark"
@@ -71,7 +80,7 @@ const UserNameContext: FunctionComponent<userNameContextProps> = ({ children }) 
     const storedTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY);
     const storedColor = localStorage.getItem(LOCAL_STORAGE_COLOR_KEY);
     const storedLayout = localStorage.getItem(LOCAL_STORAGE_LAYOUT_KEY);
-
+    
     if (storedTheme) setThemeState(storedTheme);
     if (storedColor) setColorState(storedColor);
     if (storedLayout) setLayoutState(storedLayout);
@@ -84,7 +93,9 @@ const UserNameContext: FunctionComponent<userNameContextProps> = ({ children }) 
           <colorContext.Provider value={{ color: ColorValue, setColor }}>
             <layoutContext.Provider value={{ layout: LayoutValue, setLayout }}>
               <slideContext.Provider value={{ slide: SlideValue, setSlide }}>
+                <LoginContext.Provider value={{ login: logdin ? 'Logout' : 'Login', setLogin, logdin, setLogdin }}>
                 {children}
+                </LoginContext.Provider>
               </slideContext.Provider>
             </layoutContext.Provider>
           </colorContext.Provider>
@@ -94,4 +105,4 @@ const UserNameContext: FunctionComponent<userNameContextProps> = ({ children }) 
   );
 };
 
-export default UserNameContext;
+export default UserContext;
