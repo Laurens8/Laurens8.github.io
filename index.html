@@ -1,13 +1,716 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/5845cd230b2a3b54fdbaecf7.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meme-It</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/7784482.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div>
+        <img class="page-background-img" src="img/background/yellow1.jpg" alt="Laurens De Wit">
+    </div>
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="brand navbar-brand">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">Over mij</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CV">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Github">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projecten</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="translate nav-item">
+                        <a class="nav-link" href="en.html">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col">
+        <div class="socials">
+            <div class="row"><a href="https://github.com/Laurens8?tab=repositories" target="_blank"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <div class="row"><a href="https://www.linkedin.com/in/laurens-de-wit-b799001a2/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a></div>
+            <div class="row"><a href="mailto: laurens.dewit70@gmail.com"><i class="bi bi-envelope-fill"></i></a></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <div class="hero-image" id="Home">
+                <div class="hero-header" data-aos="fade">
+                    <h1>Ik ben De Wit Laurens</h1>
+                </div>
+                <div class="hero-discription" data-aos="fade">
+                    <p>En ik ben een softwareontwikkelaar</p>
+                </div>
+                <div class="hero-button" data-aos="fade">
+                    <button type="button" class="btn btn-danger btn-lg"><a href="#Contact">Neem contact met mij
+                            op</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col">
+            <div class="col-md-6">
+                <div class="about" id="About" data-aos="fade">
+                    <h1>Over mij?</h1>
+                    <p>Gedreven</p>
+                    <p>Opgewonden</p>
+                    <p>Nieuwsgierig</p>
+                    <p>Efficiënt</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="about-text" data-aos="fade">
+
+                    <p>Ik ben een gedreven softwareontwikkelaar, met een passie voor het omzetten van ideeën in
+                        realiteit door middel van code.
+                        Ik gedij op uitdagingen en push mezelf consequent om nieuwe hoogten te bereiken in mijn
+                        projecten.</p>
+                    <p>Opwinding voedt mijn werk. Ik vind het leuk om innovatieve technologieën te ontdekken en actueel
+                        te blijven met de
+                        laatste trends in de steeds evoluerende wereld van softwareontwikkeling.</p>
+                    <p>Nieuwsgierigheid is mijn drijfveer. Ik houd ervan om me te verdiepen in complexe problemen,
+                        oplossingen te ontrafelen,
+                        en voortdurend mijn kennisbasis uit te breiden om mijn probleemoplossende vaardigheden te
+                        verbeteren.</p>
+                    <p>Efficiëntie is het sleutelwoord in mijn aanpak. Ik geloof in het schrijven van schone,
+                        geoptimaliseerde code, die niet
+                        alleen voldoet aan projectvereisten maar ook zorgt voor soepele functionaliteit en eenvoudig
+                        onderhoud.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="about-details" data-aos="fade">
+                <h2>Ervaring met softwareontwikkeling</h2>
+                <p>
+                    Ik heb ruime ervaring in softwareontwikkeling, gespecialiseerd in een breed scala aan technologieën
+                    en frameworks. Mijn
+                    vaardigheden omvatten:
+                </p>
+                <ul>
+                    <li><strong>C# .NET WPF:</strong> Vaardig in het ontwikkelen van desktopapplicaties met behulp van
+                        C# en WPF, waarbij ik intuïtieve en responsieve
+                        gebruikersinterfaces creëer.</li>
+                    <li><strong>JavaScript, HTML, CSS:</strong> Vaardig in webontwikkelingstechnologieën, waaronder
+                        front-end talen zoals JavaScript, HTML en CSS.
+                    </li>
+                    <li><strong>SQL, MongoDB:</strong> Ervaren in het werken met relationele databases met behulp van
+                        SQL, en met niet-relationele databases zoals MongoDB.
+                    </li>
+                    <li><strong>Frontend Frameworks:</strong> Goed thuis in populaire frontend-frameworks, waaronder
+                        React, Vue.js en Blazor, waardoor de ontwikkeling van dynamische
+                        en interactieve gebruikersinterfaces mogelijk is.
+                    </li>
+                    <li><strong>Native and Non-Native Mobile App Development:</strong> Bedreven in het ontwikkelen van
+                        zowel native als platformonafhankelijke mobiele applicaties voor iOS en Android.
+                    </li>
+                    <li><strong>API Development:</strong> Vaardig in het ontwerpen, bouwen en onderhouden van API's om
+                        naadloos communicatie tussen verschillende
+                        softwarecomponenten te faciliteren.
+                    </li>
+                    <li><strong>Unit Testing:</strong> Ervaring met het implementeren van unit-tests om de
+                        betrouwbaarheid en functionaliteit van softwarecomponenten te
+                        waarborgen.
+                    </li>
+                </ul>
+                <p>
+                    Dankzij mijn gevarieerde vaardigheden kan ik effectief bijdragen aan verschillende stadia van de
+                    software
+                    ontwikkelingslevenscyclus, van concept tot implementatie. Ik heb een passie voor het creëren van
+                    robuuste en schaalbare
+                    oplossingen die voldoen aan de eisen van klanten en eindgebruikers.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="logo" data-aos="fade">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/logo/html-5.png" class="img-fluid" alt="HTML5">
+                        </div>
+                        <div class="col-md-6"><img src="img/logo/css.png" class="img-fluid" alt="CSS"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/logo/javascript.png" class="img-fluid" alt="JavaScript">
+                        </div>
+                        <div class="col-md-6"><img src="img/logo/react.png" class="img-fluid" alt="React">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/logo/mysql.png" class="img-fluid" alt="MySQL">
+                        </div>
+                        <div class="col-md-6"><img src="img/logo/github.png" class="img-fluid" alt="GitHub">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/logo/java.png" class="img-fluid" alt="Java">
+                        </div>
+                        <div class="col-md-6"><img src="img/logo/nodejs.png" class="img-fluid" alt="Node.js">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6"><img src="img/logo/sass.png" class="img-fluid" alt="Sass">
+                        </div>
+                        <div class="col-md-6"><img src="img/logo/typescript.png" class="img-fluid" alt="TypeScript">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="solid">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="cv-pdf" id="CV">
+                    <img src="img/cv.png">
+                    <a class="btn btn-danger btn-lg mt-3" href="./DeWitLaurens_CV.pdf"
+                        download="DeWitLaurens_CV.pdf">Download de pdf</a>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="cv-text">
+                    <h1>Curriculum vitae</h1>
+                    <p>Ik heb 11 jaar uiteenlopende professionele ervaring opgebouwd, waarbij ik in verschillende
+                        organisaties heb gewerkt
+                        in industrieën variërend van diamantonderzoek tot lastechnologie. Mijn reis heeft mij
+                        waardevolle vaardigheden
+                        bijgebracht op het gebied van probleemoplossing, aanpassingsvermogen en samenwerking.</p>
+                    <p>Gedurende mijn hele carrière heb ik blijk gegeven van een sterke toewijding aan continu leren en
+                        verbetering. Nu ben
+                        ik enthousiast om mijn passie voor innovatie en technologie te kanaliseren in een nieuw avontuur
+                        in
+                        softwareontwikkeling.</p>
+                    <p>Mijn technische reis omvat een diepe duik in programmeertalen, softwarearchitectuur en efficiënte
+                        coderingspraktijken. Ik ben enthousiast over het creëren van impactvolle oplossingen die de
+                        echte wereld uitdagingen
+                        aanspreken en bijdragen aan het steeds evoluerende technologielandschap.</p>
+                    <p>Terwijl ik aan dit nieuwe hoofdstuk begin, wil ik graag mijn diverse achtergrond gebruiken om een
+                        uniek perspectief
+                        naar softwareontwikkeling te brengen. Ik ben ervan overtuigd dat mijn rijke ervaringen mijn
+                        probleemoplossend
+                        vermogen zullen verbeteren en mijn drive mijn succes bij het maken van hoogwaardige
+                        softwareoplossingen zal
+                        stimuleren.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="solid">
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-text" id="Github">
+                    <h1>Github</h1>
+                    <p>Ontdek een verzameling van mijn eerdere projecten en bijdragen op mijn GitHub-pagina. Mijn
+                        repositories presenteren
+                        een divers aanbod van codeerinspanningen, die mijn passie voor het creatief oplossen van
+                        problemen en continu leren
+                        in het veld van softwareontwikkeling weerspiegelen.</p>
+                    <p>Of het nu gaat om webontwikkeling, algoritmische probleemoplossing of innovatieve
+                        softwareoplossingen, elk project
+                        vertegenwoordigt een stap in mijn reis om het vak van coderen onder de knie te krijgen. Ik
+                        geloof in de kracht van
+                        samenwerking en open source bijdragen, en mijn GitHub-profiel is een bewijs van mijn toewijding
+                        aan de
+                        ontwikkelaarsgemeenschap.</p>
+                    <p>Blader gerust door de code, verken de commitgeschiedenis en krijg een kijkje in het denkproces
+                        achter elk project. Ik
+                        ben altijd bereid om feedback te ontvangen en samen te werken met collega-ontwikkelaars, dus
+                        aarzel niet om contact
+                        op te nemen als u iets interessants vindt of ideeën voor verbetering heeft.</p>
+                    <a class="btn btn-danger btn-lg" href="https://github.com/Laurens8?tab=repositories"
+                        target="_blank">Bekijk mijn
+                        github-profiel</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/github.png" width="150%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="solid">
+
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <div class="projects" id="Projects">
+                    <h1>Projecten</h1>
+                    <p>Hier zijn enkele van de projecten waaraan ik heb gewerkt. Elk project vertegenwoordigt een uniek
+                        codeeravontuur dat
+                        mijn passie voor het creatief oplossen van problemen en continu leren op het gebied van
+                        softwareontwikkeling
+                        weerspiegelt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="title">
+        <h2>Asp.net</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-text">
+                    <h2>Donut queen</h2>
+                    <p>Duik in de wereld van e-commerce met deze dynamische ASP.NET-webshop, aangedreven door het
+                        Identity-framework.
+                        Naadloos beheer van gebruikersauthenticatie en autorisatie, dit project toont niet alleen de
+                        technische bekwaamheid
+                        van ASP.NET, maar biedt ook een robuuste basis voor veilige online transacties. Van strakke
+                        productdisplays tot het
+                        vergemakkelijken van het afrekenproces, deze webshop is een voorbeeld van de samensmelting van
+                        functionaliteit en
+                        gebruikerservaring. Het is een uitstekende keuze voor bedrijven die zich op de digitale markt
+                        wagen.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/donutqueen.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2>WPF projects</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img class="mb-3" src="img/laronitravel.png" width="100%">
+                    <img src="img/laroni.png" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>Laroni travels</h2>
+                    <p>Ga op reis naar efficiënt ries beheer met deze desktopapplicatie, gebouwd op .NET 6 met behulp
+                        van
+                        de
+                        MVVM-architectuur. Het is op maat gemaakt als beheertool en biedt een naadloze
+                        organisatie-ervaring voor reizen met
+                        precisie en gemak. Door het Model-View-ViewModel (MVVM) ontwerppatroon zorgt deze applicatie
+                        voor
+                        overzichtelijkheid, scheiding van view en de model, en koestert onderhoudbaarheid en
+                        uitbreidbaarheid. Van
+                        intuïtieve
+                        gebruikersinterfaces tot robuuste databindingen, elk aspect is minutieus ontworpen om
+                        reisplanningsprocessen te
+                        stroomlijnen. Of het nu gaat om het plannen van routes of het beheren van logistiek, deze
+                        beheerstool is uw
+                        betrouwbare metgezel voor het organiseren van gedenkwaardige reizen met de grootst mogelijke
+                        efficiëntie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-text">
+                    <h2>Tennis vlaanderen</h2>
+                    <p>Duik in de wereld van recreatieve sporten met deze levendige WPF-desktopapplicatie, ontworpen
+                        voor tennisliefhebbers
+                        die graag lid willen worden van een club en gemakkelijk banen willen reserveren. Gebouwd op de
+                        Windows Presentation
+                        Foundation (WPF), combineert deze app intuïtief ontwerp naadloos met krachtige functionaliteit
+                        en biedt gebruikers
+                        een heerlijke ervaring vanaf de inschrijving tot een terrein boeking. Met een gestroomlijnde en
+                        responsieve
+                        interface, navigeer je door de lidmaatschapsopties en het plannen van terrein boeking
+                        wordt een fluitje van
+                        een cent. Of je nu een doorgewinterde speler bent of gewoon een racket oppakt, deze applicatie
+                        opent de deuren naar
+                        een levendige tennisgemeenschap, waar elke service en volley slechts één klik verwijderd is.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/tennisVlaanderen.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/tm-task.png" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>To-do app</h2>
+                    <p>Ervaar productiviteit opnieuw ontworpen met deze WPF-desktopapplicatie, zorgvuldig ontworpen om
+                        gebruikers in staat
+                        te stellen hun taken efficiënt te beheren. Deze app is getransformeerd van JavaScript naar C# en
+                        biedt een naadloze
+                        overgang met betere prestaties en betrouwbaarheid. Voeg eenvoudig taken toe, geef ze prioriteit
+                        en stel een actieve
+                        taak in waar u zich op kunt concentreren om uw inspanningen efficiënt te richten. Met een
+                        intuïtieve
+                        gebruikersinterface en soepele interacties wordt navigeren door uw takenlijst een plezierige
+                        ervaring. Of u nu
+                        dagelijkse klusjes aanpakt of aan complexe projecten begint, deze applicatie is uw vertrouwde
+                        metgezel in het
+                        bereiken van productiviteitsmijlpalen met precisie en gemak.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2>Frontend frameworks</h2>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="project1">
+                    <h2>react Meme-it</h2>
+                    <p>Duik in de enorme oceaan van internetinhoud met deze boeiende React-front-end toepassing, waarbij
+                        gebruik wordt
+                        gemaakt van de kracht van de Reddit API om een gepersonaliseerde browse-ervaring samen te
+                        stellen. Naadloos
+                        samensmeltend ontwerp met robuuste functionaliteit, biedt deze app een toegangspoort tot
+                        eindeloze stromen boeiende
+                        inhoud van de diverse Reddit gemeenschap. Van grappige anekdotes tot nadenken stemmende
+                        discussies, verken een
+                        groot aantal onderwerpen die zijn afgestemd op uw interesses met gemak. Met intuïtieve navigatie
+                        en realtime
+                        updates, dompel jezelf onder in het steeds evoluerende online landschap van gesprekken. Of je nu
+                        een gewone browser
+                        bent of een doorgewinterde redditor, deze app is jouw portaal naar de pols van het internet, het
+                        leveren van een
+                        verse dosis ontdekkingsinhoud binnen handbereik.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/memeit.png" width="100%">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/vuemovies.png" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>Vue Movies</h2>
+                    <p>Stap het filmische rijk binnen met deze Vue.js-frameworkapplicatie, speciaal ontworpen om de
+                        magie van films naar
+                        jouw scherm te brengen door een naadloze integratie van de Fussy search API. Met de elegantie
+                        van Vue.js omarmend,
+                        biedt deze app een visueel verbluffend en responsief platform waarmee je eenvoudig je favoriete
+                        films kunt
+                        verkennen. Van tijdloze klassiekers tot de nieuwste blockbusters, begin aan een reis door de
+                        filmgeschiedenis met
+                        intuïtieve zoekfunctionaliteiten die zelfs de meest veeleisende filmliefhebbers aanspreken.
+                        Ontdek verborgen
+                        juweeltjes en herontdek oude favorieten met dynamische filtering en realtime updates, allemaal
+                        binnen een strakke en
+                        meeslepende interface. Of je nu op zoek bent naar entertainment voor een gezellig avondje uit of
+                        het plannen van je
+                        volgende filmmarathon, laat deze app jouw ultieme gids zijn voor filmisch genot, waar elk
+                        zoekavontuur wacht om zich
+                        te ontvouwen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="project1">
+                    <h2>Blazer</h2>
+                    <p>Deze Blazor Single Page Application (SPA) is een divers platform dat is ontworpen om te
+                        entertainen en gebruikers te
+                        betrekken via verschillende multimediale ervaringen. Het bevat functies zoals een galerij met
+                        filmposters met
+                        iconische beelden uit klassieke en hedendaagse films, een Random Image Generator om creativiteit
+                        en verkenning te
+                        inspireren, een FunFacts-pagina om intrigerende trivia te ontdekken, en een dobbelspel om geluk
+                        en strategie te
+                        testen. De app belooft eindeloos vermaak en ontdekking voor gebruikers van alle leeftijden,
+                        waarbij geavanceerde
+                        technologie wordt gecombineerd met interactieve functies om meeslepende ervaringen te creëren.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/blazer.png" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2>API</h2>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/api.js.png" width="80%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>Node.js API with Express</h2>
+                    <p>Deze Node.js API, mogelijk gemaakt door Express en Mongoose, is ontworpen om het campusmanagement
+                        voor de Thomas More
+                        School te stroomlijnen. Het biedt functies zoals het maken, verwijderen en ophalen van
+                        campussen, evenals robuuste
+                        gebruikersauthenticatie voor beheerders en gebruikers. Met intuïtieve CRUD-bewerkingen en de
+                        interface van Mongoose
+                        voor MongoDB, wordt het beheer van campusgegevens efficiënt en georganiseerd. De API geeft
+                        prioriteit aan
+                        beveiliging met ingebouwde authenticatiemechanismen die alleen geautoriseerd personeel in staat
+                        stellen om records
+                        te wijzigen. Of u nu een beheerder of een gebruiker bent, deze API biedt een
+                        gebruiksvriendelijke oplossing voor
+                        toegang tot informatie over de campussen van Thomas More School, waardoor een revolutie
+                        teweeggebracht wordt in het
+                        campusbeheer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h2>Progressive Web Apps</h2>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <div class="project1">
+                    <h2>Ionic app</h2>
+                    <p>De Kringloop Shop biedt een Ionic Progressive Web App (PWA) waar gebruikers een bijdrage kunnen
+                        leveren aan de
+                        circulaire economie door gemakkelijk producten op hun online marktplaats te vermelden. Met een
+                        gebruiksvriendelijke
+                        interface kunnen gebruikers foto's maken, beschrijvingen toevoegen en prijzen vaststellen voor
+                        artikelen die ze niet
+                        langer nodig hebben, maar die nog steeds in goede staat zijn. Dit platform promoot duurzaamheid
+                        en gemeenschap door
+                        gebruikers aan te moedigen hun ruimte op te ruimen en pre-loved items een kans te geven om
+                        nieuwe huizen te vinden.
+                        Door de Ionic PWA te downloaden, kunnen gebruikers een stap zetten naar een meer duurzame
+                        levensstijl en een
+                        positieve impact op de planeet hebben door afval te verminderen en hergebruik te bevorderen,
+                        product voor product.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/ionic.png" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h2>Thomas more project</h2>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/tm-thomasmore.png" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>Website</h2>
+                    <p>De personeelshub van de Thomas More School is een ASP.NET-website die is ontworpen om iedereen op
+                        de hoogte te houden
+                        van de aanwezigheid van personeel op de campus. Via een gebruiksvriendelijke interface kunnen
+                        docenten en personeel
+                        eenvoudig hun status bijwerken en aangeven of ze op de campus zijn of zijn vertrokken.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/api-swagger.png" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>API</h2>
+                    <p>De ASP.NET API fungeert als brug tussen de Thomas More School-website en de speciale Android-app,
+                        waarbij het vlotte
+                        communicatie en gegevensuitwisseling faciliteert. Deze robuuste API, gebouwd op het
+                        ASP.NET-framework, zorgt voor
+                        een veilige en efficiënte overdracht van informatie tussen platforms.</p>
+                    <p>Met een RESTful-architectuur en JSON als voorkeursdataformaat biedt de API een gestandaardiseerde
+                        benadering van
+                        gegevensuitwisseling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="github-img">
+                    <img src="img/android-app.png" width="40%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="project1">
+                    <h2>Mobile app</h2>
+                    <p>De Thomas More Schoolpersoneel-app is uw mobiele metgezel voor het moeiteloos beheren van uw
+                        aanwezigheid op de
+                        campus. Ontworpen voor Android-apparaten, stelt deze app docenten en personeel in staat om hun
+                        status onderweg bij
+                        te werken, waardoor een naadloze communicatie met collega's en beheerders mogelijk is.</p>
+                    <p>Dankzij de intuïtieve interface is het bijwerken van uw status net zo eenvoudig als het tikken op
+                        een knop, waardoor
+                        u snel kunt aangeven of u nu op school aankomt of naar huis gaat. Realtime updates houden
+                        iedereen op de hoogte over
+                        uw beschikbaarheid, waardoor een soepele coördinatie mogelijk is. Moet u er even tussenuit?
+                        Update gewoon uw status,
+                        en iedereen zal weten dat u tijdelijk afwezig bent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="solid">
+
+    <div class="container">
+        <div class="col">
+            <div class="contact-form" id="Contact">
+                <h1>Contact</h1>
+                <p class="lead">als je het leuk vindt wat je ziet, neem dan gerust contact met mij op.</p>
+                <form action="https://formsubmit.co/laurens.dewit70@gmail.com" method="POST">
+                    <div class="mb-3">
+                        <label for="name" type="text" name="name" class="form-label">Naam</label>
+                        <input type="text" class="form-control border border-2 border-dark" id="name" name="name"
+                            placeholder="Enter your name here." aria-describedby="nameHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" name="email" class="form-label">E-mailadres</label>
+                        <input type="email" class="form-control border border-2 border-dark" id="email" name="email"
+                            placeholder="Enter your E-mail Address here." aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" name="message" class="form-label">Bericht</label>
+                        <textarea class="form-control border border-2 border-dark" id="message" name="message" rows="3"
+                            placeholder="" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-lg mb-4">Versturen</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Only initialize once
+            duration: 1000, // Animation duration in milliseconds
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
 </html>

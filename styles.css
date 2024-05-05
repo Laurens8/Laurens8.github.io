@@ -1,0 +1,410 @@
+body,
+html {
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.translate {
+    position: fixed;
+    left: 80%;
+
+}
+
+.brand {
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+}
+
+.page-background-img {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar a {
+    font-size: 150%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/IMG-20211220-WA0002.jpg");
+    height: 33rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    margin-top: 10%;
+}
+
+.hero-image h1 {
+    width: 500%;
+}
+
+.hero-image p {
+    width: 500%;
+}
+
+.hero-image button {
+    width: 200%;
+}
+
+.hero-header {
+    text-align: center;
+    position: relative;
+    padding-top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-discription {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: large;
+}
+
+.hero-button {
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    animation-name: left;
+    animation-duration: 1s;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-size: 4rem;
+}
+
+.about p {
+    text-decoration: underline;
+}
+
+.about-text {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 1s;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+
+.about-details {
+    width: 10%;
+    text-align: left;
+    position: relative;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    margin-top: 20%;
+    animation-name: right;
+    animation-duration: 1s;
+    margin-bottom: 5%;
+    font-size: 150%;
+}
+
+.logo img {
+    position: relative;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    margin-top: 20%;
+    animation-name: left;
+    animation-duration: 1s;
+    margin-top: 20%;
+    width: 50%;
+    height: auto;
+}
+
+.cv-pdf {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+.cv-text {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    font-size: 150%;
+}
+
+.github-img {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.github-text {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+
+.projects-img {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.project1 {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    font-size: 150%;
+    margin-bottom: 5%;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 0%;
+    width: auto;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.socials {
+    font-size: 3rem;
+    width: 2.5%;
+    left: 10px;
+    position: fixed;
+    top: 40%;
+}
+
+.socials a {
+    text-decoration: none;
+    color: black;
+}
+
+.title h2 {
+    text-decoration: underline;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+    position: relative;
+    left: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-size: 150%;
+
+}
+
+
+
+@keyframes left {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+
+    0% {
+        background-color: transparent;
+        left: 0px;
+    }
+}
+
+@keyframes right {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+
+    0% {
+        background-color: transparent;
+        left: 100%;
+    }
+}
+
+.hero-header {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    animation-name: left;
+    animation-duration: 2s;
+}
+
+.hero-discription {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    animation-name: right;
+    animation-duration: 2s;
+}
+
+.hero-button {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    animation-name: left;
+    animation-duration: 2s;
+}
+
+hr {
+    animation-name: left;
+    animation-duration: 2s;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+
+    .cv-pdf img {
+        width: 20rem;
+        margin-bottom: 5%;
+    }
+
+    .github-img img {
+        width: 20rem;
+    }
+
+    .about-text {
+        text-align: center;
+        transform: translate(0%, 0%);
+        left: 30%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 50%;
+        font-size: 150%;
+        margin-bottom: 5%;
+    }
+
+    .about-details {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    .contact-form {
+        width: auto;
+    }
+
+    .projects-img {
+        width: 100%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .projects-img p {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .projects-img h2 {
+        text-align: center;
+        position: relative;
+        left: 50%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .title h2 {
+        text-decoration: underline;
+        margin-bottom: 5%;
+        margin-top: 3%;
+        text-align: center;
+        position: relative;
+        left: 0%;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .hero-image {
+        margin-top: 20%;
+    }
+
+    .hero-discription {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 10%;
+    }
+
+    .hero-button {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 15%;
+    }
+
+    .hero-header {
+        text-align: center;
+        position: relative;
+        color: white;
+        width: 10%;
+    }
+}
