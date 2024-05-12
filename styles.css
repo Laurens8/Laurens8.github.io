@@ -223,13 +223,14 @@ hr {
         display: none;
     }
 
-    .cv-text {
-        font-size: 100%;
-
+    .cv .row {
+        display: block !important;
     }
 
-    .github-img img {
-        width: 24rem;
+    .cv-text {
+
+        font-size: 100%;
+        margin-bottom: 6%;
     }
 
     .cv {
